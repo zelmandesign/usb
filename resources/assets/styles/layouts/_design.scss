@@ -1,0 +1,84 @@
+.design-your-own {
+  background: $light-grey-bg;
+
+  .featured-image {
+    margin-top: -50px;
+    margin-bottom: 50px;
+
+    @media (max-width: 1560px) {
+      margin-top: -20px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-left: -300px;
+    }
+  }
+
+  #boxes {
+    max-width: 960px;
+    padding-bottom: 40px;
+
+    .col-md-4 {
+      padding-right: 50px;
+      margin-bottom: 25px;
+
+      @include media-breakpoint-down(lg) {
+        background: none;
+        padding-right: 15px;
+      }
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 10px;
+      }
+
+      div {
+        margin-bottom: 5px;
+
+        strong {
+          line-height: 27px;
+          vertical-align: middle;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .design-carousel {
+    background: #fff;
+    padding: 75px 0;
+
+    .container {
+      max-width: 1000px;
+
+      .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ccc' viewBox='19.998903274536133 57.99972915649414 160.0007781982422 84.00030517578125'%3E%3Cpath d='M172.5 142a7.485 7.485 0 0 1-5.185-2.073L100 75.808l-67.315 64.12c-2.998 2.846-7.74 2.744-10.606-.234a7.454 7.454 0 0 1 .235-10.565l72.5-69.057a7.524 7.524 0 0 1 10.371 0l72.5 69.057a7.455 7.455 0 0 1 .235 10.565A7.503 7.503 0 0 1 172.5 142z'/%3E%3C/svg%3E") !important;
+        height: 90px !important;
+        width: 90px !important;
+        transform: rotate(-90deg);
+
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+      }
+
+      .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ccc' viewBox='19.998903274536133 57.99972915649414 160.0007781982422 84.00030517578125'%3E%3Cpath d='M172.5 142a7.485 7.485 0 0 1-5.185-2.073L100 75.808l-67.315 64.12c-2.998 2.846-7.74 2.744-10.606-.234a7.454 7.454 0 0 1 .235-10.565l72.5-69.057a7.524 7.524 0 0 1 10.371 0l72.5 69.057a7.455 7.455 0 0 1 .235 10.565A7.503 7.503 0 0 1 172.5 142z'/%3E%3C/svg%3E") !important;
+        height: 90px !important;
+        width: 90px !important;
+        transform: rotate(90deg);
+
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+      }
+
+      .carousel-control-prev {
+        margin-left: -125px;
+      }
+
+      .carousel-control-next {
+        margin-right: -110px;
+      }
+    }
+  }
+}

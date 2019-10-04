@@ -1,0 +1,248 @@
+.usb-sticks,
+.mobile-accessories {
+  .page-header {
+    h1 {
+      display: none;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    margin-bottom: 0;
+  }
+
+  #cat-h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+
+  .category-nav {
+    border: 1px solid #a0a09f;
+    margin-bottom: 20px;
+
+    .nav {
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+
+      .nav-item {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          border: 1px solid #a0a09f;
+          right: 0;
+          top: 15px;
+          height: 15px;
+
+          @include media-breakpoint-down(sm) {
+            content: none;
+          }
+        }
+
+        &:last-child {
+          &::after {
+            content: none;
+          }
+        }
+      }
+
+      .nav-link {
+        color: #a0a09f;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 300 !important;
+        padding: 10px 30px;
+        position: relative;
+
+        @include media-breakpoint-down(lg) {
+          padding: 10px 20px;
+        }
+
+        @include media-breakpoint-down(md) {
+          padding: 10px 10px;
+        }
+      }
+    }
+  }
+
+  .grey-inside {
+    background: $light-grey-bg;
+    font-size: 15px;
+    min-height: 400px;
+
+    #img-cat {
+      @include media-breakpoint-down(lg) {
+        text-align: center !important;
+      }
+    }
+
+    .col-lg {
+      padding-left: 0;
+      padding-right: 0;
+
+      @include media-breakpoint-down(md) {
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    .cat-wrap {
+      width: 350px;
+      font-size: 14px;
+
+      @include media-breakpoint-down(md) {
+        width: auto;
+        padding: 50px 0;
+      }
+
+      h2 {
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+article {
+  header {
+    .entry-title {
+      font-size: 17px;
+      margin: 20px 0 15px 0;
+      text-transform: uppercase;
+      color: $black;
+    }
+  }
+
+  .zoom {
+    @include media-breakpoint-up(md) {
+      max-width: 599px;
+      width: 100%;
+      max-height: 268px;
+      height: auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .grow {
+      @include media-breakpoint-up(md) {
+        width: 100%;
+        height: auto;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          display: block;
+          z-index: 100;
+          -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  .single-wrapper {
+    background: $light-grey-bg;
+    margin-top: 80px;
+    padding-bottom: 20px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 80px;
+      padding-top: 20px;
+    }
+
+    #breadcrumbs {
+      padding-top: 20px;
+      letter-spacing: 2px;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+
+    .entry-title {
+      font-size: 40px;
+      margin-bottom: 0;
+    }
+
+    .entry-subtitle {
+      font-size: 17px;
+      color: $body-text;
+      font-weight: 400 !important;
+    }
+  }
+
+  .thumbs {
+    padding: 50px 0 15px 0;
+
+    .container {
+      max-width: 960px;
+
+      .col-md {
+        .thumb-ins {
+          background: $light-grey-bg;
+        }
+      }
+    }
+  }
+
+  .entry-summary {
+    .container {
+      max-width: 275px;
+    }
+  }
+}
+
+.category-header {
+  margin-top: 100px;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center !important;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 50px !important;
+    min-height: 300px;
+    background-position: left !important;
+  }
+
+  .page-header {
+    padding: 25px 0 0 0;
+
+    #breadcrumbs {
+      letter-spacing: 2px;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+
+    h1 {
+      margin-top: 75px;
+      font-weight: 500;
+      color: #000;
+      font-size: 25px;
+      text-align: left;
+      margin-bottom: 5px;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 50px;
+      }
+    }
+
+    .cat-desc {
+      font-size: 15px;
+
+      h2 {
+        color: #000;
+        font-size: 15px;
+        text-align: left;
+        font-weight: 500;
+      }
+    }
+  }
+}

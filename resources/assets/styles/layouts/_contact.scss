@@ -1,0 +1,32 @@
+.contact-us {
+  #contact-us-container {
+    max-width: 960px;
+  }
+
+  .contact-us-form {
+    background: $blue;
+    color: #fff;
+    padding: 30px;
+    margin-top: -50px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 0;
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 50px;
+      text-transform: uppercase;
+      font-weight: 300 !important;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 0.5rem;
+    }
+
+    textarea {
+      min-height: 200px !important;
+    }
+  }
+}

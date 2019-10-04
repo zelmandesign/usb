@@ -1,0 +1,129 @@
+.quote {
+  background: $light-grey-bg;
+
+  .container {
+    max-width: 960px;
+
+    .quote-text {
+      padding-right: 25px;
+
+      h4 {
+        font-size: 19px;
+        font-weight: 500;
+        margin: 30px 0 20px 0;
+      }
+
+      .technical {
+        h4 {
+          margin-bottom: 10px;
+        }
+
+        hr {
+          margin-top: 5px;
+          border-color: $body-text;
+        }
+
+        .color {
+          width: 15px;
+          height: 15px;
+          display: inline-block;
+        }
+
+        .Black {
+          background-color: #242323;
+        }
+
+        .Red {
+          background-color: #d11f2d;
+        }
+
+        .Yellow {
+          background-color: #e1c341;
+        }
+
+        .Green {
+          background-color: #009b2a;
+        }
+
+        .White {
+          background-color: #fff;
+          border: 1px solid #000;
+        }
+
+        .Pink {
+          background-color: #ffacf2;
+        }
+
+        .Purple {
+          background-color: #bc34ba;
+        }
+
+        .Brown {
+          background-color: #69451b;
+        }
+
+        .Silver {
+          background-color: #c0c0bf;
+        }
+
+        .Blue {
+          background-color: #0085cf;
+        }
+
+        .Orange {
+          background-color: #f9812a;
+        }
+      }
+    }
+
+    .quote-form {
+      padding: 40px 30px;
+      background: $blue;
+      color: #fff;
+      margin-top: -30px;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 0;
+      }
+
+      h3 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 300 !important;
+        padding: 0;
+        margin-bottom: 35px;
+      }
+
+      .form-control,
+      .comment-form input[type="text"],
+      .comment-form input[type="email"],
+      .comment-form input[type="url"],
+      .search-form .search-field {
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0;
+        -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+
+      label {
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      textarea {
+        height: 225px !important;
+      }
+    }
+  }
+}

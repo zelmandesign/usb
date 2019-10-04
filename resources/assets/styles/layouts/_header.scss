@@ -1,0 +1,89 @@
+.banner {
+  background-color: $black;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+
+  .brand {
+    padding: 0.5rem 0;
+    margin-left: -15px;
+  }
+
+  .navbar-toggler {
+    color: #fff;
+    margin-top: 5px;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  .nav-primary {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .dropdown-menu {
+    top: 30px;
+    background: $black;
+    border-radius: 0;
+    font-size: 1em;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+    width: 200px;
+
+    @include media-breakpoint-down(sm) {
+      width: auto;
+      box-shadow: none;
+      padding: 0;
+      margin: 0;
+
+      .nav-link {
+        padding: 0.5rem 0;
+        margin: 0;
+
+        &:last-child {
+          padding-bottom: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+.banner .nav li {
+  @extend .nav-item;
+
+  margin-right: 80px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include media-breakpoint-down(lg) {
+    margin-right: 30px;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-right: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 15px;
+  }
+}
+
+.banner .nav a {
+  @extend .nav-link;
+
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.9rem 0 0 0;
+
+  &:hover {
+    color: $green;
+  }
+}
